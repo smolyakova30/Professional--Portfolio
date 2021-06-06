@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #0bf0ab;
-    --secondary-color: #03633e;
-    --tertiary-color: #08bb34;
+    --primary-color: #06241b;
+    --secondary-color: #023b26;
+    --tertiary-color: #014412;
 }
 
 * {
@@ -26,7 +26,7 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("./images/photo-1503252947848-7338d3f92f31.jpeg");
+    background-image: url("./images/Background-website-01.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -66,53 +66,56 @@ header {
   }
   
   header nav ul li a:hover {
-    background: var(--primary-color);
     color: var(--secondary-color);
+    font-size:30px;
+    font-size-adjust: 20px;
     border-radius: 15px;
     text-shadow: none;
   }
 
   section {
-    padding: 60px;
+    padding: 0 60px;
   }
 
   /* About me */
-.about {
+
+  .about-me-info {
+      display: flex;
+  }
+  
+.about-me {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-  }
-  
-  .about {
-    margin: 20px;
     flex: 1;
-    background: var(--secondary-color);
     color: var(--primary-color);
   }
   
-  .my-picture img {
-    width: 20%;
-    float: right;
+  
+  .my-picture img{
+    width: 35%;
+    border: var(--primary-color) solid 2px;
   }
   
-  .about p {
-    padding: 30px;
-    line-height: 4;
-    float: right;
+  .about-me-text {
+    line-height: 1.2;
+    width: 80%;
+   
   }
   
-  .about h2 {
-    font-size: 28px;
-    font-weight: lighter;
-    margin-bottom: 15px;
+  .about-me h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 2%;
+    font-size: 40px;
+    font-weight: bold;
   }
   
   /* Hero section */
 
   .hero {
-    background-image: url('./images/photo-1503252947848-7338d3f92f31.jpeg');
+    background-image: url('./images/Background-website-01.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -122,7 +125,47 @@ header {
     background-position: 80%;
   }
 
+/* portfolio */
+.portfolio h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 2%;
+    font-size: 40px;
+    font-weight: bold;
+}
+  .portfolio h3{
+      text-align: center;
+  }
 
+  .web-text {
+      text-align: center;
+  }
+
+  .websites {
+    justify-content: center;
+    display: flex;
+    padding: 5px 0 20px 0;
+
+  }
+
+  .web-img img{
+      width: 100%;
+      padding: 10px;
+  }
+
+  .web-info p {
+      text-align: center;
+  }
+
+  .web-img:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
   /* SECTION TITLE STYLES START */
 .section-title {
     font-size: 48px;
@@ -139,30 +182,45 @@ header {
     background-color: #ddd; /* Grey background */
   }
   
+  .containers h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 2%;
+    font-size: 40px;
+    font-weight: bold;
+}  
 .skills {
     text-align: right; /* Right-align text */
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
+    padding-top: 2px; /* Add top padding */
+    padding-bottom: 2px; /* Add bottom padding */
     color: white; /* White text color */
   }
+
+  .skillbar {
+      width: 70%;
+  }
   
-.html {width: 90%; background-color: #04AA6D;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
+.html {width: 90%; background-color: #035807;} 
+.css {width: 80%; background-color: #0a9e05;} 
+.js {width: 30%; background-color: #53a85a;} 
 
 
 /* Contact */
 .contact {
-    background: #9ff1d1;
+    background: rgba(156, 252, 159, 0.3);
     align-items: center;
   }
   
   .contact h2 {
+    text-align: center;
+    text-decoration: underline;
     color: var(--primary-color);
-    font-size: 25px;
-    margin: 20px 0;
+    font-size: 35px;
     line-height: 1.5;
     text-align: center;
+    margin: 2%;
+    font-size: 40px;
+    font-weight: bold;
   }
 
   .contact h3 {
@@ -185,7 +243,49 @@ header {
   }
 
   .contact div {
-    color: white;
+    color: rgb(193, 253, 203);
   }
 
+  .contact-form button {
+    height:50px;
+    width:90px;
+    border: none;
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
 
+  .contact-form button:hover {
+    color: white;
+    background: var(--tertiary-color);
+  }
+
+  @media screen and (max-width: 520px) {
+.websites {
+    flex-direction: column;
+}
+.about-me {
+    flex-direction: column;
+}
+  }
