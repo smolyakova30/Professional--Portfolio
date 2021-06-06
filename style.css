@@ -10,9 +10,13 @@
     padding: 0;
   }
 
+  html {
+    scroll-padding-top: 60px; /* height of sticky header */
+  }
+
   body {
     color: var(--tertiary-color);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: URW Chancery L, cursive;
   }
 
   /* HEADER*/
@@ -78,33 +82,8 @@ header {
   }
 
   /* About me */
-
-  .about-me-info {
-      display: flex;
-  }
-  
-.about-me {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    color: var(--primary-color);
-  }
-  
-  
-  .my-picture img{
-    width: 35%;
-    border: var(--primary-color) solid 2px;
-  }
-  
-  .about-me-text {
-    line-height: 1.2;
-    width: 80%;
-   
-  }
-  
   .about-me h2 {
+    color: var(--tertiary-color); 
     text-align: center;
     text-decoration: underline;
     margin: 2%;
@@ -112,6 +91,60 @@ header {
     font-weight: bold;
   }
   
+  .my-picture img{
+    width: 30%;
+    border: var(--primary-color) solid 2px;
+    float: right;
+  }
+
+  .about-me {
+    width: 65%;
+    margin: 0 auto;
+    justify-content: left;
+    flex: 1;
+    color: var(--primary-color);
+  }
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 2px; /* Add top padding */
+    padding-bottom: 2px; /* Add bottom padding */
+    color: white; /* White text color */
+  }
+
+  .skillbar {
+      width: 68%;
+  }
+  
+.html {width: 90%; background-color: #035807;} 
+.css {width: 80%; background-color: #0a9e05;} 
+.js {width: 30%; background-color: #53a85a;} 
+
+
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+  }
+  
+  .containers h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 2%;
+    font-size: 40px;
+    font-weight: bold;
+}  
+
+.links {
+    text-align: center;
+}
+
+.links a:hover {
+    color: var(--secondary-color);
+    font-size:30px;
+    font-size-adjust: 20px;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
   /* Hero section */
 
   .hero {
@@ -166,7 +199,7 @@ header {
     display:block;
     z-index:999;
 }
-  /* SECTION TITLE STYLES START */
+  /* Section styles title */
 .section-title {
     font-size: 48px;
     border-bottom: 3px solid;
@@ -176,34 +209,6 @@ header {
     margin: 0 auto 35px auto;
     width: 50%;
   }
-/* Container for skill bars */
-.container {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
-  }
-  
-  .containers h2 {
-    text-align: center;
-    text-decoration: underline;
-    margin: 2%;
-    font-size: 40px;
-    font-weight: bold;
-}  
-.skills {
-    text-align: right; /* Right-align text */
-    padding-top: 2px; /* Add top padding */
-    padding-bottom: 2px; /* Add bottom padding */
-    color: white; /* White text color */
-  }
-
-  .skillbar {
-      width: 70%;
-  }
-  
-.html {width: 90%; background-color: #035807;} 
-.css {width: 80%; background-color: #0a9e05;} 
-.js {width: 30%; background-color: #53a85a;} 
-
 
 /* Contact */
 .contact {
@@ -281,11 +286,21 @@ header {
     background: var(--tertiary-color);
   }
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 600px) {
 .websites {
     flex-direction: column;
 }
+
 .about-me {
+    text-align: center;
+}
+.about-me-info {
     flex-direction: column;
 }
+
+.my-picture img{
+    float:none;
+    height: 100px;
+    width: 70px;
   }
+}
