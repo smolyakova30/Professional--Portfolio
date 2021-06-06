@@ -1,5 +1,138 @@
+:root {
+    --primary-color: #0bf0ab;
+    --secondary-color: #03633e;
+    --tertiary-color: #08bb34;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* HEADER*/
+
+header {
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("./images/photo-1503252947848-7338d3f92f31.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+
+  header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 40px;
+    color: var(--primary-color);
+    text-shadow: 0 0 20px rgba(106, 245, 136, 0.5);
+  }
+  
+  header a {
+    text-decoration:underline;
+    color: var(--primary-color);
+  }
+  
+  header nav {
+    margin: 7px;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(106, 245, 136, 0.5);
+  }
+  
+  header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+  section {
+    padding: 60px;
+  }
+
+  /* About me */
+.about {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .about {
+    margin: 20px;
+    flex: 1;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .my-picture img {
+    width: 20%;
+    float: right;
+  }
+  
+  .about p {
+    padding: 30px;
+    line-height: 4;
+    float: right;
+  }
+  
+  .about h2 {
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+  }
+  
+  /* Hero section */
+
+  .hero {
+    background-image: url('./images/photo-1503252947848-7338d3f92f31.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+  }
 
 
+  /* SECTION TITLE STYLES START */
+.section-title {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+  }
 /* Container for skill bars */
 .container {
     width: 100%; /* Full width */
@@ -16,3 +149,43 @@
 .html {width: 90%; background-color: #04AA6D;} /* Green */
 .css {width: 80%; background-color: #2196F3;} /* Blue */
 .js {width: 65%; background-color: #f44336;} /* Red */
+
+
+/* Contact */
+.contact {
+    background: #9ff1d1;
+    align-items: center;
+  }
+  
+  .contact h2 {
+    color: var(--primary-color);
+    font-size: 25px;
+    margin: 20px 0;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .contact h3 {
+      color: var(--secondary-color);
+      font-size: 15px;
+      margin: 20px 0;
+      line-height: 1.5;
+      text-align: center;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact > * {
+    flex: 1;
+    margin: 15px;
+  }
+
+  .contact div {
+    color: white;
+  }
+
+
