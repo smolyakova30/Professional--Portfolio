@@ -4,7 +4,7 @@
 
 <a href=https://smolyakova30.github.io/Professional--Portfolio> Click here</a>
 
- ![Alt text](\images\portfolioscreenshot.PNG?raw=true "Optional Title")
+ ![Alt text](./images/portfolioscreenshot.PNG?raw=true "Optional Title")
 
 Here I want to represent my porfolio where you can find next files:
 * README.md
