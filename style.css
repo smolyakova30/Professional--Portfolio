@@ -133,9 +133,7 @@ header {
     font-weight: bold;
 }  
 
-.links {
-    text-align: center;
-}
+
 
 .links a:hover {
     color: var(--secondary-color);
@@ -182,22 +180,39 @@ header {
   }
 
   .web-img img{
-      width: 100%;
+      max-width: 600px;
+      width: 400px;
       padding: 10px;
+  }
+
+    .web-img-1 img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 50%;
+      width: 70%;
   }
 
   .web-info p {
       text-align: center;
   }
 
-  .web-img:hover {
+  .web-img :hover {
     position:relative;
-    top:-25px;
-    left:-35px;
+    top:25px;
+    left:35px;
     width:500px;
     height:auto;
     display:block;
     z-index:999;
+}
+
+.web-img-1 img:hover {
+  position:relative;
+  width:900px;
+  height:auto;
+  display:block;
+  z-index:999;
 }
   /* Section styles title */
 .section-title {
