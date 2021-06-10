@@ -321,4 +321,8 @@ section {
     height: 100px;
     width: 70px;
   }
+
+  .contact {
+    padding: 5px 5px;
+  }
 }
