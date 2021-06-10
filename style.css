@@ -134,7 +134,7 @@ header {
 }  
 
 .links {
-    text-align: center;
+    text-align: left;
 }
 
 .links a:hover {
@@ -291,8 +291,26 @@ header {
     flex-direction: column;
 }
 
+header {
+  padding: 20px 110px;
+  justify-content: center;
+}
+
+header h1 {
+  text-align: center;
+}
+h1 a {
+  font-size: large;
+}
+
+section {
+  padding: 0 80px;
+}
+
 .about-me {
-    text-align: center;
+  padding: 10px;
+  min-width: 400px;
+  text-align: center;
 }
 .about-me-info {
     flex-direction: column;
